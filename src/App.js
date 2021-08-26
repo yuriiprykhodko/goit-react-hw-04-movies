@@ -1,12 +1,9 @@
 import { Route, Switch } from "react-router";
 import { lazy, Suspense } from "react";
 
-import "./App.css";
+import "./styles.css";
 import Navigation from "./Components/Navigation/Navigation";
-// import HomePage from "./pages/HomePage";
-// import MoviesPage from "./pages/MoviesPage";
-// import NotFoundPage from "./pages/NotFoundPage";
-// import MovieDetailsPage from "./pages/MovieDetailsPage";
+
 
 const HomePage = lazy(() =>
   import("./pages/HomePage/HomePage.js" /*webpackChunkName:'HomePage'*/)
